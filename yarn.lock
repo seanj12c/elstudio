@@ -4408,6 +4408,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"body-parser@npm:1.20.2":
+  version: 1.20.2
+  resolution: "body-parser@npm:1.20.2"
+  dependencies:
+    bytes: "npm:3.1.2"
+    content-type: "npm:~1.0.5"
+    debug: "npm:2.6.9"
+    depd: "npm:2.0.0"
+    destroy: "npm:1.2.0"
+    http-errors: "npm:2.0.0"
+    iconv-lite: "npm:0.4.24"
+    on-finished: "npm:2.4.1"
+    qs: "npm:6.11.0"
+    raw-body: "npm:2.5.2"
+    type-is: "npm:~1.6.18"
+    unpipe: "npm:1.0.0"
+  checksum: 10c0/06f1438fff388a2e2354c96aa3ea8147b79bfcb1262dfcc2aae68ec13723d01d5781680657b74e9f83c808266d5baf52804032fbde2b7382b89bd8cdb273ace9
+  languageName: node
+  linkType: hard
+
 "bonjour-service@npm:^1.0.11":
   version: 1.2.1
   resolution: "bonjour-service@npm:1.2.1"
@@ -5005,7 +5025,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"content-type@npm:~1.0.4":
+"content-type@npm:~1.0.4, content-type@npm:~1.0.5":
   version: 1.0.5
   resolution: "content-type@npm:1.0.5"
   checksum: 10c0/b76ebed15c000aee4678c3707e0860cb6abd4e680a598c0a26e17f0bfae723ec9cc2802f0ff1bc6e4d80603719010431d2231018373d4dde10f9ccff9dadf5af
@@ -5906,6 +5926,9 @@ __metadata:
     "@testing-library/react": "npm:^13.0.0"
     "@testing-library/user-event": "npm:^13.2.1"
     bootstrap: "npm:^5.3.3"
+    emailjs-com: "npm:^3.2.0"
+    express: "npm:^4.18.3"
+    nodemailer: "npm:^6.9.11"
     react: "npm:^18.2.0"
     react-awesome-slider: "npm:^4.1.0"
     react-bootstrap: "npm:^2.10.1"
@@ -5920,6 +5943,13 @@ __metadata:
     web-vitals: "npm:^2.1.0"
   languageName: unknown
   linkType: soft
+
+"emailjs-com@npm:^3.2.0":
+  version: 3.2.0
+  resolution: "emailjs-com@npm:3.2.0"
+  checksum: 10c0/3c6865ce89ebabeccd4f678fbd5f545f58482bb99fc23c17d9cebbf895705275df2da9c6fadaef8148397fe7fcc18cbbe49f9c720b5ad88b2dd6b82680ef169f
+  languageName: node
+  linkType: hard
 
 "emittery@npm:^0.10.2":
   version: 0.10.2
@@ -6760,6 +6790,45 @@ __metadata:
     utils-merge: "npm:1.0.1"
     vary: "npm:~1.1.2"
   checksum: 10c0/75af556306b9241bc1d7bdd40c9744b516c38ce50ae3210658efcbf96e3aed4ab83b3432f06215eae5610c123bc4136957dc06e50dfc50b7d4d775af56c4c59c
+  languageName: node
+  linkType: hard
+
+"express@npm:^4.18.3":
+  version: 4.18.3
+  resolution: "express@npm:4.18.3"
+  dependencies:
+    accepts: "npm:~1.3.8"
+    array-flatten: "npm:1.1.1"
+    body-parser: "npm:1.20.2"
+    content-disposition: "npm:0.5.4"
+    content-type: "npm:~1.0.4"
+    cookie: "npm:0.5.0"
+    cookie-signature: "npm:1.0.6"
+    debug: "npm:2.6.9"
+    depd: "npm:2.0.0"
+    encodeurl: "npm:~1.0.2"
+    escape-html: "npm:~1.0.3"
+    etag: "npm:~1.8.1"
+    finalhandler: "npm:1.2.0"
+    fresh: "npm:0.5.2"
+    http-errors: "npm:2.0.0"
+    merge-descriptors: "npm:1.0.1"
+    methods: "npm:~1.1.2"
+    on-finished: "npm:2.4.1"
+    parseurl: "npm:~1.3.3"
+    path-to-regexp: "npm:0.1.7"
+    proxy-addr: "npm:~2.0.7"
+    qs: "npm:6.11.0"
+    range-parser: "npm:~1.2.1"
+    safe-buffer: "npm:5.2.1"
+    send: "npm:0.18.0"
+    serve-static: "npm:1.15.0"
+    setprototypeof: "npm:1.2.0"
+    statuses: "npm:2.0.1"
+    type-is: "npm:~1.6.18"
+    utils-merge: "npm:1.0.1"
+    vary: "npm:~1.1.2"
+  checksum: 10c0/0b9eeafbac549e3c67d92d083bf1773e358359f41ad142b92121935c6348d29079b75054555b3f62de39263fffc8ba06898b09fdd3e213e28e714c03c5d9f44c
   languageName: node
   linkType: hard
 
@@ -10096,6 +10165,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"nodemailer@npm:^6.9.11":
+  version: 6.9.11
+  resolution: "nodemailer@npm:6.9.11"
+  checksum: 10c0/ca45d4676758dc9878c3aff19cbfd97921d9d4a34b306e8088c1ada96fe60badf14bdb1b4c70abe5ea3393d281ee12b0d5b75e474e21e8dfb5974f2dc4710db1
+  languageName: node
+  linkType: hard
+
 "nopt@npm:^7.0.0":
   version: 7.2.0
   resolution: "nopt@npm:7.2.0"
@@ -11717,6 +11793,18 @@ __metadata:
     iconv-lite: "npm:0.4.24"
     unpipe: "npm:1.0.0"
   checksum: 10c0/5dad5a3a64a023b894ad7ab4e5c7c1ce34d3497fc7138d02f8c88a3781e68d8a55aa7d4fd3a458616fa8647cc228be314a1c03fb430a07521de78b32c4dd09d2
+  languageName: node
+  linkType: hard
+
+"raw-body@npm:2.5.2":
+  version: 2.5.2
+  resolution: "raw-body@npm:2.5.2"
+  dependencies:
+    bytes: "npm:3.1.2"
+    http-errors: "npm:2.0.0"
+    iconv-lite: "npm:0.4.24"
+    unpipe: "npm:1.0.0"
+  checksum: 10c0/b201c4b66049369a60e766318caff5cb3cc5a900efd89bdac431463822d976ad0670912c931fdbdcf5543207daf6f6833bca57aa116e1661d2ea91e12ca692c4
   languageName: node
   linkType: hard
 
