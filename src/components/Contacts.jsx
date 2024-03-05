@@ -72,7 +72,7 @@ const Contacts = () => {
     <div id="contacts" className=" h-screen w-full">
       <div className="relative">
         <img
-          className="z-[-1] absolute h-screen w-screen mx-auto object-cover pointer-events-none select-none"
+          className="z-[-1] blur-sm absolute h-screen w-screen mx-auto object-cover pointer-events-none select-none"
           src={bg}
           alt=""
         />

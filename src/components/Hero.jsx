@@ -1,5 +1,5 @@
 import React from "react";
-import right from "../assets/right.png";
+import lobby from "../assets/elphotos/lobby.JPG";
 import bg from "../assets/bg.jpg";
 import play from "../assets/play.png";
 const Hero = () => {
@@ -7,7 +7,7 @@ const Hero = () => {
     <div id="home" className="h-screen w-full ">
       <div className="relative">
         <img
-          className="z-[-1] absolute h-screen w-screen mx-auto object-cover pointer-events-none select-none"
+          className="z-[-1] blur-sm absolute h-screen w-screen mx-auto object-cover pointer-events-none select-none"
           src={bg}
           alt=""
         />
@@ -15,9 +15,9 @@ const Hero = () => {
       </div>
 
       <div className="md:h-screen lg:px-32 md:px-20  text-white w-full">
-        <div className="flex md:h-screen pt-24 gap-2 px-4 md:flex-row flex-col-reverse">
+        <div className="flex md:h-screen pt-36 md:pt-24 md:gap-10 px-4 md:flex-row flex-col-reverse">
           <div className="md:w-1/2 my-auto justify-start flex flex-col">
-            <h1 className="text-center md:text-3xl lg:text-5xl text-lg md:text-start font-bold">
+            <h1 className="text-center pt-10 md:pt-0 md:text-3xl lg:text-5xl text-lg md:text-start font-bold">
               Hi, welcome to <span className="text-primary">eLstudio</span>
             </h1>
             <p className="text-xs py-4 md:text-base text-justify">
@@ -40,7 +40,11 @@ const Hero = () => {
             </div>
           </div>
           <div className="md:w-1/2 flex md:justify-end">
-            <img className="md:ml-auto md:my-auto mx-auto" src={right} alt="" />
+            <img
+              className="md:ml-auto md:h-96 rounded-md md:my-auto mx-auto"
+              src={lobby}
+              alt=""
+            />
           </div>
         </div>
       </div>

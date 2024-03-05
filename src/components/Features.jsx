@@ -10,25 +10,25 @@ const Features = () => {
       id: 1,
       title: "E-Learning Hub",
       description:
-        "Our computer feature boasts cutting-edge technology designed to cater to all your computing needs. From seamless multitasking to high-performance processing, our computer feature ensures that you stay productive and efficient in your work. With advanced graphics capabilities and ample storage, it's the perfect tool for professionals, creatives, and enthusiasts alike.",
+        "The E-Learning hub is a space dedicated for faculty members and students are not allowed in this area. Seminars and classes can be held in the E-Learning hub. It also includes, 12 high-end computers with web camera and noise-canceling headsets, photocopy machine and, whiteboard for class discussions.",
     },
     {
       id: 2,
       title: "Multimedia Hub",
       description:
-        "Dive into the realm of creativity with our Media & Arts feature. Whether you're a digital artist, photographer, musician, or filmmaker, this feature provides you with a suite of powerful tools to bring your imagination to life. From photo editing software to audio production suites, our Media & Arts feature empowers you to express yourself and unleash your artistic vision.",
+        "The multimedia hub is complete with multimedia equipments such as LCD projectors, HD Smart TVs, graphic tablet, printers and, 12 high-end computer units. Here, students can accomplish their school projects and assignments with ease and comfort as each computer is internet-powered. Students can also have their brainstorming at the meeting area. ",
     },
     {
       id: 3,
       title: "Audio/Video Production Room",
       description:
-        "Capture every moment with pristine clarity using our Audio Recorder feature. Whether you're recording interviews, lectures, or musical performances, our feature ensures that every sound is faithfully reproduced. With adjustable settings and intuitive controls, you can tailor your recordings to perfection. Say goodbye to background noise and hello to crystal-clear audio with our Audio Recorder.",
+        "The AVP room is an area perfect for audio and video recording, and live broadcast. It is equipped with drone camera, camera stabilizers, wireless audio records, camera slider/dolly track, DSLR camera, mirrorless cameras, audio mixers, video recorders, 5 high-end computer units installed with audio, photo and video editing softwares, studio lights and, green area",
     },
     {
       id: 4,
       title: "Reading Hub",
       description:
-        "Explore the versatility and functionality of Feature 4. With a wide range of capabilities and customizable options, Feature 4 adapts to your needs seamlessly. Whether you're managing tasks, organizing data, or enhancing productivity, this feature offers intuitive solutions and streamlined workflows. Discover endless possibilities and unlock new horizons with Feature 4.",
+        "eLStudio has a mini library with books and internet. Here, students can sit, relax and read. Staff and students are also allowed to borrow tablets and computers for online reading. eLStudio is also open for book donations. ",
     },
   ];
 
