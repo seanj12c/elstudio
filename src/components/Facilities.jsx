@@ -78,7 +78,7 @@ const Facilities = () => {
   };
 
   return (
-    <div id="facilities" className=" h-screen w-full">
+    <div id="facilities" className=" h-full w-full">
       <div className=" h-screen px-4 md:px-20 lg:px-32 text-white">
         <div>
           <h1 className="text-center pt-32 text-2xl md:text-5xl font-bold">

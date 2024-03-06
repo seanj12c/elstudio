@@ -12,9 +12,9 @@ import { CgDanger } from "react-icons/cg";
 
 const Contacts = () => {
   const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
+    fullName: "",
     address: "",
+    contactNumber: "",
     message: "",
   });
   const [formValid, setFormValid] = useState(false);
@@ -27,9 +27,9 @@ const Contacts = () => {
     }));
 
     setFormValid(
-      formData.firstName !== "" &&
-        formData.lastName !== "" &&
+      formData.fullName !== "" &&
         formData.address !== "" &&
+        formData.contactNumber !== "" &&
         formData.message !== ""
     );
   };
@@ -39,23 +39,24 @@ const Contacts = () => {
     if (formValid) {
       emailjs
         .send(
-          "service_17lhf92",
-          "template_11o67qy",
+          "service_631e91w",
+          "template_uliu4re",
           {
-            to_email: "buclatinseanjimwell@gmail.com",
-            from_name: `${formData.firstName} ${formData.lastName}`,
+            to_email: "ccatelstudio@cvsu-rosario.edu.ph",
+            from_name: formData.fullName,
             from_address: formData.address,
+            contact_number: formData.contactNumber,
             message: formData.message,
           },
-          "AcUp3zaG6OYPrAg7S"
+          "UKABQjVE8YUhj_og4"
         )
         .then(
           (response) => {
             alert("Message sent successfully!");
             setFormData({
-              firstName: "",
-              lastName: "",
+              fullName: "",
               address: "",
+              contactNumber: "",
               message: "",
             });
           },
@@ -69,21 +70,21 @@ const Contacts = () => {
   };
 
   return (
-    <div id="contacts" className=" h-screen w-full">
+    <div id="contacts" className="h-full w-full">
       <div className="relative">
         <img
-          className="z-[-1] blur-sm absolute h-screen w-screen mx-auto object-cover pointer-events-none select-none"
+          className="z-[-1] blur-sm absolute h-screen w-screen mx-auto object-contain pointer-events-none select-none"
           src={bg}
           alt=""
         />
         <div className="absolute top-0 left-0 h-full w-full bg-black pointer-events-none"></div>
       </div>
-      <div className="h-screen my-auto pb-3 pt-24 w-full">
+      <div className="h-full my-auto pb-3 pt-24 w-full">
         <h1 className="text-white pb-10 text-center pt-10 font-bold text-5xl">
-          <span className="text-primary ">Contact</span> Us
+          <span className="text-primary">Contact</span> Us
         </h1>
         <div className="text-white mx-auto md:mx-0 gap-5 px-3 md:px-10 md:flex justify-around">
-          <div className=" md:my-auto">
+          <div className="md:my-auto">
             <h1 className="text-center md:text-start md:text-5xl pb-2 font-bold">
               Keep in <span className="text-primary">touch</span> <br /> with
               us!
@@ -106,12 +107,12 @@ const Contacts = () => {
               </a>
               <a
                 className="flex items-center gap-2 py-1 hover:text-primary duration-500 hover:translate-x-2"
-                href="mailto:ccatelstudio@cvsu.edu.ph"
+                href="mailto:ccatelstudio@cvsu-rosario.edu.ph"
                 rel="noreferrer"
                 target="_blank"
               >
                 <CiMail size={20} />
-                ccatelstudio@cvsu.edu.ph
+                ccatelstudio@cvsu-rosario.edu.ph
               </a>
               <a
                 className="flex items-center gap-2 py-1 hover:text-primary duration-500 hover:translate-x-2"
@@ -120,7 +121,7 @@ const Contacts = () => {
                 rel="noreferrer"
               >
                 <CiPhone size={20} />
-                +(639) 652 376 005
+                +(639) 090 912 345
               </a>
 
               <a
@@ -139,23 +140,13 @@ const Contacts = () => {
               className="bg-gray text-black md:w-[500px] md:h-[550px] ml-auto rounded-md w-full px-10 py-4"
               onSubmit={handleSubmit}
             >
-              <h1 className="text-primary pt-10 text-xs pb-1">First Name</h1>
+              <h1 className="text-primary pt-10 text-xs pb-1">Full Name</h1>
               <input
                 type="text"
                 className="w-full h-10 px-4 rounded-md"
-                placeholder="Sean Jimwell"
-                name="firstName"
-                value={formData.firstName}
-                onChange={handleChange}
-                required
-              />
-              <h1 className="text-primary pt-3 text-xs pb-1">Last Name</h1>
-              <input
-                className="w-full h-10 px-4 rounded-md"
-                type="text"
-                placeholder="Buclatin"
-                name="lastName"
-                value={formData.lastName}
+                placeholder="Juan Dela Cruz"
+                name="fullName"
+                value={formData.fullName}
                 onChange={handleChange}
                 required
               />
@@ -163,22 +154,57 @@ const Contacts = () => {
               <input
                 className="w-full h-10 px-4 rounded-md"
                 type="text"
-                placeholder="Tomas Morato Avenue, Quezon City"
+                placeholder="143 Tejero's Convention, Rosario, Cavite"
                 name="address"
                 value={formData.address}
                 onChange={handleChange}
                 required
               />
-              <h1 className="text-primary pt-3 text-xs pb-1">Message</h1>
+              <h1 className="text-primary pt-3 text-xs pb-1">Contact Number</h1>
               <input
-                className="w-full h-24 pb-10 px-4 rounded-md"
+                className="w-full h-10 px-4 rounded-md"
+                type="text"
+                placeholder="090912345678"
+                name="contactNumber"
+                value={formData.contactNumber}
+                onChange={handleChange}
+                onKeyDown={(e) => {
+                  if (
+                    !(
+                      e.key === "Backspace" ||
+                      e.key === "Delete" ||
+                      e.key === "Tab" ||
+                      e.key === "Escape" ||
+                      e.key === "Enter" ||
+                      (e.key >= "0" && e.key <= "9") ||
+                      (e.key === "Control" && e.key === "v")
+                    )
+                  ) {
+                    e.preventDefault();
+                  }
+
+                  if (e.key >= "0" && e.key <= "9") {
+                    if (formData.contactNumber.length >= 11) {
+                      e.preventDefault();
+                    }
+                  }
+                }}
+                maxLength={11}
+                required
+              />
+
+              <h1 className="text-primary pt-3 text-xs pb-1">Message</h1>
+              <textarea
+                className="w-full pt-3 h-28 px-4 rounded-md"
                 type="text"
                 placeholder="Your message here..."
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
                 required
+                style={{ wordWrap: "break-word" }}
               />
+
               <div className="pt-3 pb-10">
                 <button
                   className={`flex gap-2 justify-center w-full items-center px-4 py-2 rounded-md ${

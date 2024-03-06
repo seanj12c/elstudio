@@ -2,10 +2,10 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import one from "../assets/admins/1.png";
-import two from "../assets/admins/2.png";
-import three from "../assets/admins/3.png";
-import four from "../assets/admins/4.png";
+import one from "../assets/staffs/1.png";
+import two from "../assets/staffs/2.png";
+import three from "../assets/staffs/3.png";
+import four from "../assets/staffs/4.png";
 import bg from "../assets/bg.jpg";
 
 class Hero extends React.Component {
@@ -20,7 +20,7 @@ class Hero extends React.Component {
       arrows: false,
     };
     return (
-      <div id="admins" className="h-screen w-full ">
+      <div id="staffs" className="h-screen w-full ">
         <div className="relative">
           <img
             className="z-[-1] blur-sm absolute h-screen w-screen mx-auto object-cover pointer-events-none select-none"
@@ -35,7 +35,7 @@ class Hero extends React.Component {
             <div className="w-full">
               <h1 className="text-left font-bold text-5xl text-white">
                 Meet our eLstudio <br />{" "}
-                <span className="text-primary">Admins</span>
+                <span className="text-primary">staffs</span>
               </h1>
             </div>
             <div className="w-3/4 object-contain rounded-lg h-full ml-auto shadow-primary">
@@ -74,7 +74,7 @@ class Hero extends React.Component {
           <div className=" md:hidden w-full">
             <div className="w-full">
               <h1 className=" text-center font-bold text-2xl text-white">
-                Meet our eLstudio <span className="text-primary">Admins</span>
+                Meet our eLstudio <span className="text-primary">Staffs</span>
               </h1>
             </div>
             <div className="w-full px-2 mx-auto object-contain h-full ml-auto">
