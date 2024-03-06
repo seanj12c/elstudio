@@ -18,12 +18,12 @@ export const Navbar = () => {
   };
 
   return (
-    <div className=" text-white flex justify-between items-center h-24 mx-auto lg:px-32 md:px-20  px-6  fixed top-0 w-full  md:w-full z-50">
+    <div className=" text-black flex justify-between items-center h-24 mx-auto lg:px-32 md:px-20  px-6  fixed top-0 w-full  md:w-full z-50">
       <a href="#home">
         <img className="w-32 md:w-44" src={logo} alt="" />{" "}
         {/* Use currentLogo state */}
       </a>
-      <ul className="hidden md:flex font-semibold">
+      <ul className="hidden lg:text-lg md:flex font-semibold">
         <a href="#home">
           <li className="p-4 hover:text-primary hover:translate-y-1 hover:underline ease-in-out transition-all duration-500">
             About
@@ -34,9 +34,9 @@ export const Navbar = () => {
             Facilities
           </li>
         </a>
-        <a href="#staffs">
+        <a href="#updates">
           <li className="p-4 hover:text-primary hover:translate-y-1 hover:underline ease-in-out transition-all duration-500">
-            Staffs
+            Updates
           </li>
         </a>
         <a href="#features">
@@ -85,8 +85,8 @@ export const Navbar = () => {
           </div>{" "}
           <div className="text-primary px-5 rounded-md ease-in-out transition-all duration-500 active:bg-primary active:text-white hover:text-white hover:bg-primary  flex w-full items-center">
             <CiUser size={20} />
-            <a onClick={handleNav} href="#staffs">
-              <li className="p-4  ">Staffs</li>
+            <a onClick={handleNav} href="#updates">
+              <li className="p-4  ">Updates</li>
             </a>
           </div>
           <div className="text-primary px-5 rounded-md ease-in-out transition-all duration-500 active:bg-primary active:text-white hover:text-white hover:bg-primary  flex w-full items-center">

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import bg from "../assets/bg.jpg";
+
 import {
   CiLocationArrow1,
   CiPhone,
@@ -70,32 +70,24 @@ const Contacts = () => {
   };
 
   return (
-    <div id="contacts" className="h-full w-full">
-      <div className="relative">
-        <img
-          className="z-[-1] blur-sm absolute h-screen w-screen mx-auto object-contain pointer-events-none select-none"
-          src={bg}
-          alt=""
-        />
-        <div className="absolute top-0 left-0 h-full w-full bg-black pointer-events-none"></div>
-      </div>
-      <div className="h-full my-auto pb-3 pt-24 w-full">
-        <h1 className="text-white pb-10 text-center pt-10 font-bold text-5xl">
+    <div id="contacts" className="h-full pb-24 w-full">
+      <div className="h-full my-auto pb-3 py-24 w-full">
+        <h1 className="text-black pb-10 text-center pt-10 font-bold text-5xl lg:text-7xl">
           <span className="text-primary">Contact</span> Us
         </h1>
-        <div className="text-white mx-auto md:mx-0 gap-5 px-3 md:px-10 md:flex justify-around">
-          <div className="md:my-auto">
-            <h1 className="text-center md:text-start md:text-5xl pb-2 font-bold">
+        <div className="text-black mx-auto md:mx-0 gap-5 px-3  md:flex justify-around">
+          <div className="md:my-auto w-full lg:w-[550px]">
+            <h1 className="text-center text-2xl md:text-start md:text-5xl lg:text-7xl pb-2 font-bold">
               Keep in <span className="text-primary">touch</span> <br /> with
               us!
             </h1>
-            <p className="text-justify">
+            <p className="text-justify lg:text-xl">
               Welcome to our Contact Page! Here, you'll find various ways to
               connect with us, from email to social media. We value your
               messages and aim to respond promptly. Reach out—we're eager to
               hear from you!
             </p>
-            <div className="py-3 text-xs">
+            <div className="py-3 text-xs lg:text-base`">
               <a
                 className="flex items-center gap-2 py-1 hover:text-primary duration-500 hover:translate-x-2"
                 href="https://www.facebook.com/profile.php?id=100093667895201"
@@ -135,12 +127,12 @@ const Contacts = () => {
               </a>
             </div>
           </div>
-          <div className="w-full text-xs md:text-base md:px-0 md:pb-0 px-1 pb-10">
+          <div className=" text-xs md:text-base md:px-0 md:pb-0 px-1 pb-5">
             <form
-              className="bg-gray text-black md:w-[500px] md:h-[550px] ml-auto rounded-md w-full px-10 py-4"
+              className="bg-black text-black md:w-[500px] md:h-[550px] lg:w-[700px] ml-auto rounded-md w-full px-10 py-4"
               onSubmit={handleSubmit}
             >
-              <h1 className="text-primary pt-10 text-xs pb-1">Full Name</h1>
+              <h1 className="text-white pt-10 text-xs pb-1">Full Name</h1>
               <input
                 type="text"
                 className="w-full h-10 px-4 rounded-md"
@@ -150,7 +142,7 @@ const Contacts = () => {
                 onChange={handleChange}
                 required
               />
-              <h1 className="text-primary pt-3 text-xs pb-1">Address</h1>
+              <h1 className="text-white pt-3 text-xs pb-1">Address</h1>
               <input
                 className="w-full h-10 px-4 rounded-md"
                 type="text"
@@ -160,7 +152,7 @@ const Contacts = () => {
                 onChange={handleChange}
                 required
               />
-              <h1 className="text-primary pt-3 text-xs pb-1">Contact Number</h1>
+              <h1 className="text-white pt-3 text-xs pb-1">Contact Number</h1>
               <input
                 className="w-full h-10 px-4 rounded-md"
                 type="text"
@@ -193,7 +185,7 @@ const Contacts = () => {
                 required
               />
 
-              <h1 className="text-primary pt-3 text-xs pb-1">Message</h1>
+              <h1 className="text-white pt-3 text-xs pb-1">Message</h1>
               <textarea
                 className="w-full pt-3 h-28 px-4 rounded-md"
                 type="text"

@@ -2,16 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap');
 
 *{
-     font-family: "Montserrat", sans-serif;
+font-family: "Readex Pro", sans-serif;
      scroll-behavior: smooth !important;
    
 }
 
 html{
-       background-color: black;
+       background-color: #eaddcf;
 }
 
 input::-webkit-outer-spin-button,

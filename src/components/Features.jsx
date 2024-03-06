@@ -78,8 +78,8 @@ const Features = () => {
   };
 
   return (
-    <div id="features" className=" h-screen w-full">
-      <div className=" h-screen px-4 md:px-20 lg:px-32 text-white">
+    <div id="features" className=" h-full w-full">
+      <div className=" h-full px-4 pb-32 md:px-20 lg:px-32 text-black">
         <div>
           <h1 className="text-center pt-32 text-2xl md:text-5xl font-bold">
             Check out our <span className="text-primary">feature</span> section
@@ -114,7 +114,7 @@ const Features = () => {
               />
 
               {activeFeature && activeFeature.id === feature.id && (
-                <div className="absolute inset-0 flex  items-center justify-center text-center bg-black bg-opacity-75">
+                <div className="absolute inset-0 text-white flex  items-center justify-center text-center bg-black bg-opacity-75">
                   <div>
                     <h2 className="text-lg font-bold">{feature.title}</h2>
                     <p className="text-xs">

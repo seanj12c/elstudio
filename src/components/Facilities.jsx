@@ -79,7 +79,7 @@ const Facilities = () => {
 
   return (
     <div id="facilities" className=" h-full w-full">
-      <div className=" h-screen px-4 md:px-20 lg:px-32 text-white">
+      <div className=" h-full pb-32 px-4 md:px-20 lg:px-32 text-black">
         <div>
           <h1 className="text-center pt-32 text-2xl md:text-5xl font-bold">
             You are welcome to our{" "}
@@ -115,7 +115,7 @@ const Facilities = () => {
               />
 
               {activeFeature && activeFeature.id === feature.id && (
-                <div className="absolute inset-0 flex  items-center justify-center text-center bg-black bg-opacity-75">
+                <div className="absolute text-white inset-0 flex  items-center justify-center text-center bg-black bg-opacity-75">
                   <div>
                     <h2 className="text-lg font-bold">{feature.title}</h2>
                     <p className="text-xs">

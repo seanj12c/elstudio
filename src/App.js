@@ -1,5 +1,5 @@
 import React from "react";
-import Staffs from "./components/Staffs";
+import Updates from "./components/Updates";
 import Contacts from "./components/Contacts";
 import Facilities from "./components/Facilities";
 import Features from "./components/Features";
@@ -13,7 +13,7 @@ function App() {
       <Navbar/>
       <Hero/>
       <Facilities/>
-      <Staffs/>
+      <Updates/>
       <Features/>
       <Contacts/>
       <Footer/>
