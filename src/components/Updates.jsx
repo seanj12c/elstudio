@@ -18,6 +18,26 @@ class Updates extends React.Component {
     };
     return (
       <div id="updates" className="h-full w-full ">
+        <dialog id="my_modal_2" className="modal">
+          <div className="modal-box">
+            <h3 className="font-bold text-lg">
+              Information about inventory system
+            </h3>
+            <p className="py-4">Information about server in pc</p>
+          </div>
+          <form method="dialog" className="modal-backdrop">
+            <button>close</button>
+          </form>
+        </dialog>
+        <dialog id="my_modal_3" className="modal">
+          <div className="modal-box">
+            <h3 className="font-bold text-lg">Pan Cafe Pro Server</h3>
+            <p className="py-4">Information about server in pc</p>
+          </div>
+          <form method="dialog" className="modal-backdrop">
+            <button>close</button>
+          </form>
+        </dialog>
         <div className="h-full flex items-center py-36 lg:px-20 text-black w-full">
           <div className="hidden md:block w-full">
             <div className="w-full lg:px-16 pb-5">
@@ -44,19 +64,8 @@ class Updates extends React.Component {
                           document.getElementById("my_modal_3").showModal()
                         }
                       >
-                        See More
+                        See more
                       </button>
-                      <dialog id="my_modal_3" className="modal">
-                        <div className="modal-box">
-                          <h3 className="font-bold text-lg">
-                            Pan Cafe Pro Server
-                          </h3>
-                          <p className="py-4">Information about server in pc</p>
-                        </div>
-                        <form method="dialog" className="modal-backdrop">
-                          <button>close</button>
-                        </form>
-                      </dialog>
                     </div>
                   </div>
                 </div>
@@ -74,19 +83,8 @@ class Updates extends React.Component {
                           document.getElementById("my_modal_2").showModal()
                         }
                       >
-                        See More
+                        See more
                       </button>
-                      <dialog id="my_modal_2" className="modal">
-                        <div className="modal-box">
-                          <h3 className="font-bold text-lg">
-                            Information about inventory system
-                          </h3>
-                          <p className="py-4">Information about server in pc</p>
-                        </div>
-                        <form method="dialog" className="modal-backdrop">
-                          <button>close</button>
-                        </form>
-                      </dialog>
                     </div>
                   </div>
                 </div>
@@ -120,19 +118,8 @@ class Updates extends React.Component {
                           document.getElementById("my_modal_3").showModal()
                         }
                       >
-                        See More
+                        See more
                       </button>
-                      <dialog id="my_modal_3" className="modal">
-                        <div className="modal-box">
-                          <h3 className="font-bold text-lg">
-                            Pan Cafe Pro Server
-                          </h3>
-                          <p className="py-4">Information about server in pc</p>
-                        </div>
-                        <form method="dialog" className="modal-backdrop">
-                          <button>close</button>
-                        </form>
-                      </dialog>
                     </div>
                   </div>
                 </div>
@@ -150,19 +137,8 @@ class Updates extends React.Component {
                           document.getElementById("my_modal_2").showModal()
                         }
                       >
-                        open modal
+                        See more
                       </button>
-                      <dialog id="my_modal_2" className="modal">
-                        <div className="modal-box">
-                          <h3 className="font-bold text-lg">
-                            Information about inventory system
-                          </h3>
-                          <p className="py-4">Information about server in pc</p>
-                        </div>
-                        <form method="dialog" className="modal-backdrop">
-                          <button>close</button>
-                        </form>
-                      </dialog>
                     </div>
                   </div>
                 </div>
