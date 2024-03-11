@@ -1,7 +1,5 @@
-import React, { useState } from "react";
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import React from "react";
 import logo from "../assets/logo.png";
-
 import {
   CiCircleInfo,
   CiBank,
@@ -9,99 +7,87 @@ import {
   CiPhone,
   CiUser,
 } from "react-icons/ci";
-
 export const Navbar = () => {
-  const [nav, setNav] = useState(false);
-
-  const handleNav = () => {
-    setNav(!nav);
-  };
-
   return (
-    <div className=" text-black flex justify-between items-center h-24 mx-auto lg:px-32 md:px-20  px-6  fixed top-0 w-full  md:w-full z-50">
-      <a href="#home">
-        <img className="w-32 md:w-44" src={logo} alt="" />{" "}
-        {/* Use currentLogo state */}
-      </a>
-      <ul className="hidden lg:text-lg md:flex font-semibold">
-        <a href="#home">
-          <li className="p-4 hover:text-primary hover:translate-y-1 hover:underline ease-in-out transition-all duration-500">
-            About
-          </li>
-        </a>
-        <a href="#facilities">
-          <li className="p-4 hover:text-primary hover:translate-y-1 hover:underline ease-in-out transition-all duration-500">
-            Facilities
-          </li>
-        </a>
-        <a href="#updates">
-          <li className="p-4 hover:text-primary hover:translate-y-1 hover:underline ease-in-out transition-all duration-500">
-            Updates
-          </li>
-        </a>
-        <a href="#features">
-          <li className="p-4 hover:text-primary hover:translate-y-1 hover:underline ease-in-out transition-all duration-500">
-            Features
-          </li>
-        </a>
-        <a href="#contacts">
-          <li className="py-4 pl-4 hover:text-primary hover:translate-y-1 hover:underline ease-in-out transition-all duration-500">
-            Contact
-          </li>
-        </a>
-      </ul>
+    <div className="navbar bg-base-100">
+      <div className="navbar-start">
+        <div className="dropdown">
+          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+          <ul
+            tabIndex={0}
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <div className="text-primary px-5 rounded-md ease-in-out transition-all duration-500 active:bg-primary active:text-white hover:text-white hover:bg-primary  flex w-full items-center">
+              <CiCircleInfo size={20} />
 
-      <div
-        onClick={handleNav}
-        className={`block text-primary md:hidden ease-in-out transition-all duration-500`}
-      >
-        {nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
+              <a className="w-full p-4  " href="#home">
+                <li className="">About</li>
+              </a>
+            </div>
+            <div className="text-primary px-5 rounded-md ease-in-out transition-all duration-500 active:bg-primary active:text-white hover:text-white hover:bg-primary  flex w-full items-center">
+              <CiBank size={20} />
+              <a href="#facilities">
+                <li className="p-4  ">Facilities</li>
+              </a>
+            </div>{" "}
+            <div className="text-primary px-5 rounded-md ease-in-out transition-all duration-500 active:bg-primary active:text-white hover:text-white hover:bg-primary  flex w-full items-center">
+              <CiUser size={20} />
+              <a href="#updates">
+                <li className="p-4  ">Updates</li>
+              </a>
+            </div>
+            <div className="text-primary px-5 rounded-md ease-in-out transition-all duration-500 active:bg-primary active:text-white hover:text-white hover:bg-primary  flex w-full items-center">
+              <CiViewList size={20} />
+              <a href="#features">
+                <li className="p-4  ">Features</li>
+              </a>
+            </div>
+          </ul>
+        </div>
+        <a href="#about" className="">
+          <img className="w-36 pb-2" src={logo} alt="" />
+        </a>
       </div>
-      <div
-        className={
-          nav
-            ? "fixed left-0 top-0 w-[60%] h-full shadow-lg bg-white ease-in-out duration-500"
-            : "fixed left-[-100%] "
-        }
-      >
-        <a href="#home">
-          <img className="w-32 object-contain mt-4 ml-4" src={logo} alt="" />{" "}
-          {/* Use currentLogo state */}
-        </a>
-
-        <ul className="w-full py-4 px-1 flex flex-col gap-2 text-xs pt-10">
-          <div className="text-primary px-5 rounded-md ease-in-out transition-all duration-500 active:bg-primary active:text-white hover:text-white hover:bg-primary  flex w-full items-center">
-            <CiCircleInfo size={20} />
-
-            <a className="w-full p-4  " onClick={handleNav} href="#home">
-              <li className="">About</li>
-            </a>
-          </div>
-          <div className="text-primary px-5 rounded-md ease-in-out transition-all duration-500 active:bg-primary active:text-white hover:text-white hover:bg-primary  flex w-full items-center">
-            <CiBank size={20} />
-            <a onClick={handleNav} href="#facilities">
-              <li className="p-4  ">Facilities</li>
-            </a>
-          </div>{" "}
-          <div className="text-primary px-5 rounded-md ease-in-out transition-all duration-500 active:bg-primary active:text-white hover:text-white hover:bg-primary  flex w-full items-center">
-            <CiUser size={20} />
-            <a onClick={handleNav} href="#updates">
-              <li className="p-4  ">Updates</li>
-            </a>
-          </div>
-          <div className="text-primary px-5 rounded-md ease-in-out transition-all duration-500 active:bg-primary active:text-white hover:text-white hover:bg-primary  flex w-full items-center">
-            <CiViewList size={20} />
-            <a onClick={handleNav} href="#features">
-              <li className="p-4  ">Features</li>
-            </a>
-          </div>
-          <div className="text-primary px-5 rounded-md ease-in-out transition-all duration-500 active:bg-primary active:text-white hover:text-white hover:bg-primary  flex w-full items-center">
-            <CiPhone size={20} />
-            <a onClick={handleNav} href="#contacts">
-              <li className="p-4  y">Contact</li>
-            </a>
-          </div>
+      <div className="navbar-center hidden lg:flex">
+        <ul className="menu menu-horizontal px-1">
+          <li>
+            <a href="#about">About</a>
+          </li>{" "}
+          <li>
+            <a href="#updates">Updates</a>
+          </li>
+          <li>
+            <a href="#facilities">Facilities</a>
+          </li>
+          <li>
+            <a href="#features">Features</a>
+          </li>
         </ul>
+      </div>
+      <div className="navbar-end">
+        <a
+          className="btn btn-xs md:btn-sm btn-primary text-white"
+          href="#contacts"
+        >
+          {" "}
+          <CiPhone size={20} />
+          Contact Us
+        </a>
       </div>
     </div>
   );

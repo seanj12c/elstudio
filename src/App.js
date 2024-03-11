@@ -5,18 +5,18 @@ import Facilities from "./components/Facilities";
 import Features from "./components/Features";
 import Hero from "./components/Hero";
 import { Navbar } from "./components/Navbar";
-import Footer from "../src/components/Footer"
+import Footer from "../src/components/Footer";
 
 function App() {
   return (
     <div>
-      <Navbar/>
-      <Hero/>
-      <Facilities/>
-      <Updates/>
-      <Features/>
-      <Contacts/>
-      <Footer/>
+      <Navbar />
+      <Hero />
+      <Updates />
+      <Facilities />
+      <Features />
+      <Contacts />
+      <Footer />
     </div>
   );
 }
