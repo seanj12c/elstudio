@@ -11,11 +11,11 @@ const Hero = () => {
     >
       <div className="hero-overlay bg-opacity-60"></div>
       <div className="hero-content text-center text-neutral-content">
-        <div className="max-w-md">
-          <h1 className="mb-5 text-5xl font-bold">
+        <div className="max-w-md lg:max-w-xl">
+          <h1 className="mb-5 text-5xl md:text-7xl font-bold">
             Hi, welcome to <span className="text-primary">eLstudio</span>{" "}
           </h1>
-          <p className="mb-5 text-justify">
+          <p className="mb-5 md:text-lg text-justify">
             Welcome to our E-Learning Hub! Dive into an infinite world of
             opportunities for academic and personal development. With a wide
             array of tools and resources tailored to your needs, we're here to

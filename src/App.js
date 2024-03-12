@@ -6,15 +6,19 @@ import Features from "./components/Features";
 import Hero from "./components/Hero";
 import { Navbar } from "./components/Navbar";
 import Footer from "../src/components/Footer";
+import Video from "./components/Video";
+import Partnership from "./components/Partnership";
 
 function App() {
   return (
     <div>
       <Navbar />
       <Hero />
+      <Video />
       <Updates />
       <Facilities />
       <Features />
+      <Partnership />
       <Contacts />
       <Footer />
     </div>

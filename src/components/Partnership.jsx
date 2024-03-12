@@ -2,10 +2,10 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import one from "../assets/updates/1.png";
-import two from "../assets/updates/2.png";
+import one from "../assets/partnership/1.png";
+import two from "../assets/partnership/2.png";
 
-class Updates extends React.Component {
+class Partnership extends React.Component {
   render() {
     const settings = {
       infinite: true,
@@ -17,22 +17,30 @@ class Updates extends React.Component {
       arrows: false,
     };
     return (
-      <div id="updates" className="h-full w-full ">
-        <dialog id="updates1" className="modal">
+      <div id="partnership" className="h-full w-full ">
+        <dialog id="partnership1" className="modal">
           <div className="modal-box">
-            <h3 className="font-bold text-lg">
-              Information about inventory system
-            </h3>
-            <p className="py-4">Information about inventory in pc</p>
+            <h3 className="font-bold text-lg">CvSU MAIN</h3>
+            <p className="py-4">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Reiciendis qui cum unde consectetur aliquam? Saepe, consequuntur.
+              Veniam tempora, tenetur nam sed dolorem minus iusto, facere id et
+              laboriosam ipsa voluptates?
+            </p>
           </div>
           <form method="dialog" className="modal-backdrop">
             <button>close</button>
           </form>
         </dialog>
-        <dialog id="updates2" className="modal">
+        <dialog id="partnership2" className="modal">
           <div className="modal-box">
-            <h3 className="font-bold text-lg">Pan Cafe Pro Server</h3>
-            <p className="py-4">Information about server in pc</p>
+            <h3 className="font-bold text-lg">CvSU CCAT</h3>
+            <p className="py-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              atque ratione voluptates, qui reprehenderit sunt, veniam soluta
+              vitae adipisci voluptas maiores accusamus cupiditate explicabo
+              iste deleniti est non necessitatibus nisi.
+            </p>
           </div>
           <form method="dialog" className="modal-backdrop">
             <button>close</button>
@@ -42,10 +50,11 @@ class Updates extends React.Component {
           <div className="hidden md:block w-full">
             <div className="w-full lg:px-16 pb-5">
               <h1 className="text-center md:text-left font-bold text-5xl lg:text-7xl text-black">
-                What's Latest?
+                Partnership
               </h1>
               <h1 className="text-primary text-center md:text-left  text-2xl lg:text-3xl">
-                Heres our Updates
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
+                nam.
               </h1>
             </div>
             <div className="w-full mx-auto max-w-screen-lg px-1 object-contain  h-full shadow-primary">
@@ -59,13 +68,19 @@ class Updates extends React.Component {
                     />
                   </figure>
                   <div className="card-body">
-                    <h2 className="card-title">Server's in PC!</h2>
-                    <p> Out server is now working</p>
+                    <h2 className="card-title">CvSU CCAT</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Eveniet quos, in perferendis ratione necessitatibus quam
+                      suscipit velit architecto pariatur repudiandae enim neque
+                      doloribus accusantium voluptates corrupti repellat quia
+                      earum molestias.
+                    </p>
                     <div className="card-actions justify-end">
                       <button
                         className="btn"
                         onClick={() =>
-                          document.getElementById("updates2").showModal()
+                          document.getElementById("partnership2").showModal()
                         }
                       >
                         See more
@@ -82,13 +97,19 @@ class Updates extends React.Component {
                     />
                   </figure>
                   <div className="card-body">
-                    <h2 className="card-title">Our Inventory System</h2>
-                    <p>Our inventory system was currently working now!</p>
+                    <h2 className="card-title">CvSU Main</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Minima assumenda rerum atque voluptatum corporis iure
+                      eveniet aut debitis ipsa repudiandae molestiae, amet,
+                      obcaecati ullam suscipit tempore modi incidunt nisi
+                      libero?
+                    </p>
                     <div className="card-actions justify-end">
                       <button
                         className="btn"
                         onClick={() =>
-                          document.getElementById("updates1").showModal()
+                          document.getElementById("partnership1").showModal()
                         }
                       >
                         See more
@@ -123,7 +144,7 @@ class Updates extends React.Component {
                       <button
                         className="btn"
                         onClick={() =>
-                          document.getElementById("updates2").showModal()
+                          document.getElementById("partnership2").showModal()
                         }
                       >
                         See more
@@ -136,13 +157,19 @@ class Updates extends React.Component {
                     <img className="p-3" src={two} alt="Inventory" />
                   </figure>
                   <div className="card-body">
-                    <h2 className="card-title">Our Inventory System</h2>
-                    <p>Our inventory system was currently working now!</p>
+                    <h2 className="card-title">CvSU Main</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Minima assumenda rerum atque voluptatum corporis iure
+                      eveniet aut debitis ipsa repudiandae molestiae, amet,
+                      obcaecati ullam suscipit tempore modi incidunt nisi
+                      libero?
+                    </p>
                     <div className="card-actions justify-end">
                       <button
                         className="btn"
                         onClick={() =>
-                          document.getElementById("updates1").showModal()
+                          document.getElementById("partnership1").showModal()
                         }
                       >
                         See more
@@ -159,4 +186,4 @@ class Updates extends React.Component {
   }
 }
 
-export default Updates;
+export default Partnership;
