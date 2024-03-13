@@ -49,12 +49,11 @@ class Partnership extends React.Component {
         <div className="h-full flex items-center py-36 lg:px-20 text-black w-full">
           <div className="hidden md:block w-full">
             <div className="w-full lg:px-16 pb-5">
-              <h1 className="text-center md:text-left font-bold text-5xl lg:text-7xl text-black">
-                Partnership
+              <h1 className="text-center md:text-left lg:text-3xl  text-5xl  text-black">
+                Get to know
               </h1>
-              <h1 className="text-primary text-center md:text-left  text-2xl lg:text-3xl">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
-                nam.
+              <h1 className="text-primary text-center md:text-left font-bold lg:text-7xl text-2xl ">
+                Our Partners
               </h1>
             </div>
             <div className="w-full mx-auto max-w-screen-lg px-1 object-contain  h-full shadow-primary">
@@ -122,23 +121,29 @@ class Partnership extends React.Component {
           </div>
           <div className=" md:hidden w-full">
             <div className="w-full">
-              <h1 className=" text-center font-bold text-2xl text-black">
-                What's Latest?
+              <h1 className=" text-center text-black">Get to know</h1>
+              <h1 className="text-primary pb-5 text-2xl font-bold text-center">
+                Our Partners
               </h1>
-              <h1 className="text-primary text-center">Heres out Updates</h1>
             </div>
             <div className="w-full px-2">
               <Slider {...settings}>
                 <div className="card card-compact  w-96 bg-base-300 shadow-xl">
                   <figure>
-                    <img className="p-3" src={one} alt="Server" />
+                    <img
+                      className="p-3 h-60 object-cover w-full"
+                      src={one}
+                      alt="Server"
+                    />
                   </figure>
                   <div className="card-body">
-                    <h2 className="card-title">Server's in PC!</h2>
+                    <h2 className="card-title">CvSU CCAT</h2>
                     <p>
-                      {" "}
-                      Out server is now working so the server can control others
-                      pc
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Accusamus expedita rem, perspiciatis in distinctio at
+                      adipisci, illum alias, mollitia dignissimos reiciendis
+                      voluptatem est ipsam. Temporibus fugit quo tenetur debitis
+                      excepturi?
                     </p>
                     <div className="card-actions justify-end">
                       <button
@@ -154,7 +159,11 @@ class Partnership extends React.Component {
                 </div>
                 <div className="card card-compact w-96 bg-base-300 shadow-xl">
                   <figure>
-                    <img className="p-3" src={two} alt="Inventory" />
+                    <img
+                      className="p-3 h-60 object-cover w-full"
+                      src={two}
+                      alt="Inventory"
+                    />
                   </figure>
                   <div className="card-body">
                     <h2 className="card-title">CvSU Main</h2>

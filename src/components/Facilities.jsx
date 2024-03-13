@@ -10,25 +10,25 @@ const Facilities = () => {
       id: 1,
       title: "E-Learning Hub",
       description:
-        "The E-Learning hub is a space dedicated for faculty members and students are not allowed in this area. Seminars and classes can be held in the E-Learning hub. It also includes, 12 high-end computers with web camera and noise-canceling headsets, photocopy machine and, whiteboard for class discussions.",
+        "The faculty Corner is an exclusive area designated for faculty members, with restricted access for students. This space serves as a venue for seminars and classes within the E-Learning hub. It is equipped with 12 high-end computers with web camera and noise-canceling headsets, photocopy machine and, whiteboard for class discussions.",
     },
     {
       id: 2,
       title: "Multimedia Hub",
       description:
-        "The multimedia hub is complete with multimedia equipments such as LCD projectors, HD Smart TVs, graphic tablet, printers and, 12 high-end computer units. Here, students can accomplish their school projects and assignments with ease and comfort as each computer is internet-powered. Students can also have their brainstorming at the meeting area. ",
+        "The multimedia hub is complete with multimedia equipments such as LCD projectors, HD Smart TVs, graphic tablet, printers, and 12 high-end computer units. Here, students can accomplish their school projects and assignments with ease and comfort as each computer is internet-powered. Students can also have their brainstorming at the meeting area. ",
     },
     {
       id: 3,
       title: "Audio/Video Production Room",
       description:
-        "The AVP room is an area perfect for audio and video recording, and live broadcast. It is equipped with drone camera, camera stabilizers, wireless audio records, camera slider/dolly track, DSLR camera, mirrorless cameras, audio mixers, video recorders, 5 high-end computer units installed with audio, photo and video editing softwares, studio lights and, green area",
+        "The AVP room is an area perfect for audio and video recording, as well as live broadcast. It is equipped with drone camera, camera stabilizers, wireless audio records, camera slider/dolly track, DSLR camera, mirrorless cameras, audio mixers, video recorders, 5 high-end computer units installed with audio, photo and video editing softwares, and even studio lights and a green area.",
     },
     {
       id: 4,
       title: "Reading Hub",
       description:
-        "eLStudio has a mini library with books and internet. Here, students can sit, relax and read. Staff and students are also allowed to borrow tablets and computers for online reading. eLStudio is also open for book donations. ",
+        "El Studio has a mini library with books and internet. In this space, students can sit, relax and read. Faculty and students are also allowed to borrow tablets and computers for online reading. If you find our books lacking, contact us for book donations.",
     },
   ];
 
@@ -83,7 +83,7 @@ const Facilities = () => {
         <div>
           <h1 className="text-center pt-32 text-2xl md:text-5xl font-bold">
             You are welcome to our{" "}
-            <span className="text-primary">Facilities</span>
+            <span className="text-primary">Faculty Corner</span>
           </h1>
           <p className="text-center pt-3 text-primary text-xs md:text-base pb-5">
             Select Facilities

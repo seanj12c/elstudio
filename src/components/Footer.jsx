@@ -2,6 +2,7 @@ import React from "react";
 import ched from "../assets/ched.png";
 import cvsu from "../assets/cvsu.png";
 import logo from "../assets/logo.png";
+import VisitCounter from "./VisitCounter";
 
 const Footer = () => {
   return (
@@ -71,6 +72,9 @@ const Footer = () => {
             <img className="h-16 object-contain" src={cvsu} alt="" />{" "}
             <img className="h-16 object-contain" src={cvsu} alt="" />
             <img className="h-16 object-contain" src={ched} alt="" />
+          </div>
+          <div>
+            <VisitCounter />
           </div>
         </nav>
       </footer>

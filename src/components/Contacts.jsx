@@ -71,15 +71,11 @@ const Contacts = () => {
 
   return (
     <div id="contacts" className="h-full pb-24 w-full">
-      <div className="h-full my-auto pb-3 py-24 w-full">
-        <h1 className="text-black pb-10 text-center pt-10 font-bold text-5xl lg:text-7xl">
-          <span className="text-primary">Contact</span> Us
-        </h1>
+      <div className="h-full my-auto pb-24 pt-10 w-full">
         <div className="text-black mx-auto md:mx-0 gap-5 px-3  md:flex justify-around">
           <div className="md:my-auto w-full lg:w-[550px]">
             <h1 className="text-center text-2xl md:text-start md:text-5xl lg:text-7xl pb-2 font-bold">
-              Keep in <span className="text-primary">touch</span> <br /> with
-              us!
+              Get in <span className="text-primary">touch</span> with us!
             </h1>
             <p className="text-justify lg:text-xl">
               Welcome to our Contact Page! Here, you'll find various ways to

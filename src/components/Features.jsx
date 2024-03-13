@@ -1,34 +1,27 @@
 import React from "react";
-import box from "../assets/box.jpg";
-import box2 from "../assets/box2.jpg";
-import box3 from "../assets/box3.jpg";
-import box4 from "../assets/box4.jpg";
+import box from "../assets/elphotos/net.jpg";
+import box2 from "../assets/elphotos/tech.JPG";
+import box3 from "../assets/elphotos/fac.JPG";
 
 const Features = () => {
   const featuresData = [
     {
       id: 1,
-      title: "E-Learning Hub",
+      title: "Internet access",
       description:
-        "The E-Learning hub is a space dedicated for faculty members and students are not allowed in this area. Seminars and classes can be held in the E-Learning hub. It also includes, 12 high-end computers with web camera and noise-canceling headsets, photocopy machine and, whiteboard for class discussions.",
+        "El Studio is an internet-powered learning hub originally established for flexible learning. Students can utilize the internet through the provided computers. Unfortunately, Wi-Fi access is limited for personal devices. However, if you are using personal laptops for your projects, you can request Wi-Fi access from the staff.",
     },
     {
       id: 2,
-      title: "Multimedia Hub",
+      title: "Technological Resources",
       description:
-        "The multimedia hub is complete with multimedia equipments such as LCD projectors, HD Smart TVs, graphic tablet, printers and, 12 high-end computer units. Here, students can accomplish their school projects and assignments with ease and comfort as each computer is internet-powered. Students can also have their brainstorming at the meeting area. ",
+        "We offer free access to our media production and learning equipment. Whether you need to study, practice programming, or write research papers, you can use the provided computers in the E-learning hub. For visual graphic designs or video editing, our high-end computer units in the AVP room are available. Additionally, you can borrow cameras, stabilizers, drones, and other equipment for multimedia creation.",
     },
     {
       id: 3,
-      title: "Audio/Video Production Room",
+      title: "Multipurpose Facility",
       description:
-        "The AVP room is an area perfect for audio and video recording, and live broadcast. It is equipped with drone camera, camera stabilizers, wireless audio records, camera slider/dolly track, DSLR camera, mirrorless cameras, audio mixers, video recorders, 5 high-end computer units installed with audio, photo and video editing softwares, studio lights and, green area",
-    },
-    {
-      id: 4,
-      title: "Reading Hub",
-      description:
-        "eLStudio has a mini library with books and internet. Here, students can sit, relax and read. Staff and students are also allowed to borrow tablets and computers for online reading. eLStudio is also open for book donations. ",
+        "El Studio not only acts as an open space for academic activities but also serves as a platform for extra-curricular events such as seminars and hosts e-games.",
     },
   ];
 
@@ -59,9 +52,7 @@ const Features = () => {
       case 2:
         imageSrc = box3;
         break;
-      case 3:
-        imageSrc = box4;
-        break;
+
       default:
         imageSrc = box;
     }
@@ -78,17 +69,18 @@ const Features = () => {
   };
 
   return (
-    <div id="features" className=" h-full w-full">
+    <div id="features" className=" h-full bg-base-200 w-full">
       <div className=" h-full px-4 pb-32 md:px-20 lg:px-32 text-black">
         <div>
           <h1 className="text-center pt-32 text-2xl md:text-5xl font-bold">
-            Check out our <span className="text-primary">feature</span> section
+            Get <span className="text-primary">inspired</span> with our Services
           </h1>
+
           <p className="text-center pt-3 text-primary text-xs md:text-base pb-5">
             Select feature
           </p>
         </div>
-        <div className="grid gap-5 grid-cols-2 ">
+        <div className="grid gap-5 grid-cols-1 md:grid-cols-3 ">
           {featuresData.map((feature) => (
             <div
               key={feature.id}
@@ -108,7 +100,7 @@ const Features = () => {
                     ? box2
                     : feature.id === 3
                     ? box3
-                    : box4
+                    : feature.id === 4
                 }
                 alt=""
               />

@@ -3,10 +3,10 @@ import React from "react";
 const Video = () => {
   return (
     <div className="py-10 w-full max-w-7xl rounded-lg mx-auto">
-      <div className="card rounded-lg px-2 md:px-0  lg:card-side bg-base-100 shadow-xl">
+      <div className="card rounded-lg px-2 md:px-0  lg:card-side bg-base-200 shadow-lg ">
         <figure>
           <iframe
-            className="w-[230w0px] h-96 md:h-[500px]"
+            className="md:w-[2300px] w-full h-96 md:h-[500px]"
             src="https://www.youtube.com/embed/8EZ-o1j3Ct4?si=hUcFVcuHpzqqk20i&autoplay=1"
             title="YouTube video player"
             frameborder="0"
