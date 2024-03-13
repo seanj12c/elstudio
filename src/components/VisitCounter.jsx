@@ -28,9 +28,7 @@ const VisitCounter = () => {
       try {
         await db.runTransaction(async (transaction) => {
           const doc = await transaction.get(visitRef);
-          if (!doc.exists) {
-            throw "Document does not exist!";
-          }
+
           const newCount = (doc.data().count || 0) + 1;
           transaction.update(visitRef, { count: newCount });
           setTotalVisits(newCount);

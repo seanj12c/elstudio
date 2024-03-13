@@ -61,16 +61,20 @@ class Updates extends React.Component {
           </form>
         </dialog>
         <div className="h-full flex items-center py-36 lg:px-20 text-black w-full">
-          <div className="hidden md:block w-full">
-            <div className="w-full lg:px-16 pb-5">
+          <div className="hidden md:flex md:items-center w-full">
+            <div className="w-full max-w-screen-sm lg:px-16 pb-5">
               <h1 className="text-center md:text-left text-2xl text-black">
                 Get a taste of our
               </h1>
               <h1 className="text-primary text-center md:text-left font-bold text-7xl   ">
                 Latest Arrivals
               </h1>
+              <p className="text-xs  md:text-base">
+                Our learning hub just got a super cool upgrade. Head over to
+                eLStudio and check it out for yourself!
+              </p>
             </div>
-            <div className="w-full mx-auto max-w-screen-lg px-1 object-contain  h-full shadow-primary">
+            <div className="w-full mx-auto max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg px-1 object-contain  h-full shadow-primary">
               <Slider {...settings}>
                 <div className="card card-compact w-96 bg-base-300 ">
                   <figure>

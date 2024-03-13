@@ -17,7 +17,7 @@ class Partnership extends React.Component {
       arrows: false,
     };
     return (
-      <div id="partnership" className="h-full w-full ">
+      <div id="partnership" className="h-full w-fu ll ">
         <dialog id="partnership1" className="modal">
           <div className="modal-box">
             <h3 className="font-bold text-lg">CvSU MAIN</h3>
@@ -47,16 +47,22 @@ class Partnership extends React.Component {
           </form>
         </dialog>
         <div className="h-full flex items-center py-36 lg:px-20 text-black w-full">
-          <div className="hidden md:block w-full">
-            <div className="w-full lg:px-16 pb-5">
+          <div className="hidden md:flex  flex-row-reverse md:items-center w-full">
+            <div className="w-full max-w-screen-sm lg:px-16 pb-5">
               <h1 className="text-center md:text-left lg:text-3xl  text-5xl  text-black">
                 Get to know
               </h1>
               <h1 className="text-primary text-center md:text-left font-bold lg:text-7xl text-2xl ">
                 Our Partners
               </h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Necessitatibus et quasi sit eaque tempora neque provident totam
+                aperiam officia. Eos enim, laborum maxime non voluptatum
+                necessitatibus cum iste suscipit numquam!
+              </p>
             </div>
-            <div className="w-full mx-auto max-w-screen-lg px-1 object-contain  h-full shadow-primary">
+            <div className="w-full mx-auto max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg px-1 object-contain  h-full shadow-primary">
               <Slider {...settings}>
                 <div className="card card-compact w-96 bg-base-300 ">
                   <figure>
