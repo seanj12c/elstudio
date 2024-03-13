@@ -3,7 +3,7 @@ import box from "../assets/elphotos/net.jpg";
 import box2 from "../assets/elphotos/tech.JPG";
 import box3 from "../assets/elphotos/fac.JPG";
 
-const Features = () => {
+const Service = () => {
   const featuresData = [
     {
       id: 1,
@@ -69,7 +69,7 @@ const Features = () => {
   };
 
   return (
-    <div id="features" className=" h-full bg-base-200 w-full">
+    <div id="service" className=" h-full bg-base-200 w-full">
       <div className=" h-full px-4 pb-32 md:px-20 lg:px-32 text-black">
         <div>
           <h1 className="text-center pt-32 text-2xl md:text-5xl font-bold">
@@ -77,7 +77,7 @@ const Features = () => {
           </h1>
 
           <p className="text-center pt-3 text-primary text-xs md:text-base pb-5">
-            Select feature
+            Choose a service to view its details
           </p>
         </div>
         <div className="grid gap-5 grid-cols-1 md:grid-cols-3 ">
@@ -120,7 +120,7 @@ const Features = () => {
         </div>
       </div>
       {modalOpen && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-90">
+        <div className="fixed inset-0 z-10 flex items-center justify-center bg-black bg-opacity-90">
           <div className=" mx-auto">
             <h1 className="font-bold text-center pb-4 pt-10 text-4xl md:text-6xl">
               <span className="text-primary">
@@ -154,4 +154,4 @@ const Features = () => {
   );
 };
 
-export default Features;
+export default Service;

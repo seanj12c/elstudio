@@ -6,7 +6,7 @@ const Video = () => {
       <div className="card rounded-lg px-2 md:px-0  lg:card-side bg-base-200 shadow-lg ">
         <figure>
           <iframe
-            className="md:w-[2300px] w-full h-96 md:h-[500px]"
+            className="md:w-[2300px] rounded-lg w-full h-96 md:h-[500px]"
             src="https://www.youtube.com/embed/8EZ-o1j3Ct4?si=hUcFVcuHpzqqk20i&autoplay=1"
             title="YouTube video player"
             frameborder="0"
@@ -15,11 +15,10 @@ const Video = () => {
           ></iframe>
         </figure>
         <div className="card-body">
-          <h2 className="card-title">eLstudio highlights</h2>
+          <h2 className="card-title">Learn more about eLStudio</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-            corrupti aliquid id nostrum praesentium atque recusandae obcaecati,
-            blanditiis saepe quis.
+            Watch this video for a deeper look at eLStudio's accomplishments and
+            how it effectively serves as an open resource center for all.
           </p>
           <div className="card-actions justify-end">
             <a

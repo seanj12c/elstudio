@@ -82,11 +82,11 @@ const Facilities = () => {
       <div className=" h-full pb-32 px-4 md:px-20 lg:px-32 text-black">
         <div>
           <h1 className="text-center pt-32 text-2xl md:text-5xl font-bold">
-            You are welcome to our{" "}
-            <span className="text-primary">Faculty Corner</span>
+            Get innovative with our
+            <span className="text-primary"> Facilities </span>
           </h1>
           <p className="text-center pt-3 text-primary text-xs md:text-base pb-5">
-            Select Facilities
+            Choose a facility to view its details
           </p>
         </div>
         <div className="grid gap-5 grid-cols-2 ">
@@ -129,7 +129,7 @@ const Facilities = () => {
         </div>
       </div>
       {modalOpen && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-90">
+        <div className="fixed z-10 inset-0 flex items-center justify-center bg-black bg-opacity-90">
           <div className=" mx-auto">
             <h1 className="font-bold text-center pb-4 pt-10 text-4xl md:text-6xl">
               <span className="text-primary">

@@ -53,8 +53,8 @@ export const Navbar = () => {
             </div>
             <div className="text-primary px-5 rounded-md ease-in-out transition-all duration-500 active:bg-primary active:text-white hover:text-white hover:bg-primary  flex w-full items-center">
               <CiViewList size={20} />
-              <a href="#features">
-                <li className="p-4  ">Features</li>
+              <a href="#service">
+                <li className="p-4  ">Service</li>
               </a>
             </div>
           </ul>
@@ -75,7 +75,7 @@ export const Navbar = () => {
             <a href="#facilities">Facilities</a>
           </li>
           <li>
-            <a href="#features">Features</a>
+            <a href="#service">Service</a>
           </li>
         </ul>
       </div>

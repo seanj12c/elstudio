@@ -78,10 +78,8 @@ const Contacts = () => {
               Get in <span className="text-primary">touch</span> with us!
             </h1>
             <p className="text-justify lg:text-xl">
-              Welcome to our Contact Page! Here, you'll find various ways to
-              connect with us, from email to social media. We value your
-              messages and aim to respond promptly. Reach out—we're eager to
-              hear from you!
+              We value your messages and aim to respond promptly. Reach
+              out—we're eager to hear from you!
             </p>
             <div className="py-3 text-xs lg:text-base`">
               <a

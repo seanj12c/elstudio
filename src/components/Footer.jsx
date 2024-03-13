@@ -2,6 +2,8 @@ import React from "react";
 import ched from "../assets/ched.png";
 import cvsu from "../assets/cvsu.png";
 import logo from "../assets/logo.png";
+import upou from "../assets/upou.png";
+
 import VisitCounter from "./VisitCounter";
 
 const Footer = () => {
@@ -16,7 +18,7 @@ const Footer = () => {
           </p>
         </aside>
         <nav>
-          <h6 className="footer-title">Other Links</h6>
+          <h6 className="footer-title">Quick Links</h6>
           <a rel="noreferrer" target="_blank" href="https://cvsu.edu.ph">
             <li className="my-1 hover:text-primary duration-500">
               Cavite State University
@@ -30,26 +32,6 @@ const Footer = () => {
             <li className="my-1 hover:text-primary duration-500">
               Cavite State University - CCAT
             </li>
-          </a>
-          <a rel="noreferrer" target="_blank" href="https://ched.gov.ph">
-            <li className="my-1 hover:text-primary duration-500">
-              Commission on Higher Education
-            </li>
-          </a>
-          <a
-            rel="noreferrer"
-            target="_blank"
-            href="https://www.upou.edu.ph/home/"
-          >
-            <li className="my-1 hover:text-primary duration-500">
-              UP Open University
-            </li>
-          </a>
-        </nav>
-        <nav>
-          <h6 className="footer-title">Quick Links</h6>
-          <a rel="noreferrer" target="_blank" href="http://www.codepp.net">
-            <li className="my-1 hover:text-primary duration-500">CODEPP</li>
           </a>
           <a rel="noreferrer" target="_blank" href="https://www.csc.gov.ph">
             <li className="my-1 hover:text-primary duration-500">
@@ -67,13 +49,34 @@ const Footer = () => {
           </a>
         </nav>
         <nav>
+          <h6 className="footer-title">Other Links</h6>
+          <a rel="noreferrer" target="_blank" href="http://www.codepp.net">
+            <li className="my-1 hover:text-primary duration-500">CODEPP</li>
+          </a>
+
+          <a rel="noreferrer" target="_blank" href="https://ched.gov.ph">
+            <li className="my-1 hover:text-primary duration-500">
+              Commission on Higher Education
+            </li>
+          </a>
+          <a
+            rel="noreferrer"
+            target="_blank"
+            href="https://www.upou.edu.ph/home/"
+          >
+            <li className="my-1 hover:text-primary duration-500">
+              UP Open University
+            </li>
+          </a>
+        </nav>
+        <nav className="flex justify-center flex-col w-full mx-auto items-center">
           <div className=" border-white justify-center md:justify-start grid-cols-4 md:grid-cols-2  grid gap-2 pl-2">
             <img className="h-16  object-contain" src={ched} alt="" />
             <img className="h-16 object-contain" src={cvsu} alt="" />{" "}
-            <img className="h-16 object-contain" src={cvsu} alt="" />
+            <img className="h-16 object-contain" src={upou} alt="" />
             <img className="h-16 object-contain" src={ched} alt="" />
           </div>
-          <div>
+          <div className="hover:translate-y-1 ease-in-out transition-all duration-300">
             <VisitCounter />
           </div>
         </nav>
