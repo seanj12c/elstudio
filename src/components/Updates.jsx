@@ -17,7 +17,7 @@ class Updates extends React.Component {
       arrows: false,
     };
     return (
-      <div id="updates" className="h-full bg-base-200 w-full ">
+      <div id="updates" className="h-full  w-full ">
         <dialog id="updates1" className="modal">
           <div className="modal-box">
             <h3 className="font-bold text-primary text-lg">

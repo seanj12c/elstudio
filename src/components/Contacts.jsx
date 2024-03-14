@@ -70,7 +70,7 @@ const Contacts = () => {
   };
 
   return (
-    <div id="contacts" className="h-full pb-24 w-full">
+    <div id="contacts" className="h-full w-full">
       <div className="h-full my-auto pb-24 pt-10 w-full">
         <div className="text-black mx-auto md:mx-0 gap-5 px-3  md:flex justify-around">
           <div className="md:my-auto w-full lg:w-[550px]">

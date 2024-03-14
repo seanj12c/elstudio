@@ -69,7 +69,7 @@ const Service = () => {
   };
 
   return (
-    <div id="service" className=" h-full bg-base-200 w-full">
+    <div id="service" className=" h-full w-full">
       <div className=" h-full px-4 pb-32 md:px-20 lg:px-32 text-black">
         <div>
           <h1 className="text-center pt-32 text-2xl md:text-5xl font-bold">
