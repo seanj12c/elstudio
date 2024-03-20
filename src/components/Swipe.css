@@ -3,7 +3,7 @@
 
 .App {
   width: 100%;
-
+  
   
 }
 
@@ -23,25 +23,6 @@
   opacity: 1;
 }
 
-.arrow {
-  
-  position: absolute;
-  cursor: pointer;
-  z-index: 10;
-}
-
-.arrow svg {
-  transition: color 300ms;
-}
 
 
 
-.next {
-  right: 10%;
-  top: 60%;
-}
-
-.prev {
-  left: 10%;
-  top: 60%;
-}

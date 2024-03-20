@@ -26,7 +26,7 @@ class Partnership extends React.Component {
                 Providers in the Philippines (CODEPP) through CvSU-ILCLO.
               </p>
             </div>
-            <div className="w-full mx-auto max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg px-1 object-contain  h-full shadow-primary">
+            <div className="w-full mx-auto max-w-screen-sm  xl:max-w-screen-lg px-1 object-contain  h-full shadow-primary">
               <SwiperImage />
             </div>
           </div>

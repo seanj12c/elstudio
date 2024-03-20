@@ -32,54 +32,15 @@ const Facilities = () => {
     },
   ];
 
-  const [activeFeature, setActiveFeature] = React.useState(null);
-  const [modalOpen, setModalOpen] = React.useState(false);
-  const [selectedImage, setSelectedImage] = React.useState(null);
-  const [selectedDescription, setSelectedDescription] = React.useState("");
-  const [selectedTitle, setSelectedTitle] = React.useState("");
+  const [selectedFeature, setSelectedFeature] = React.useState(null);
 
-  React.useEffect(() => {
-    const body = document.querySelector("body");
-    if (modalOpen) {
-      body.style.overflow = "hidden";
-    } else {
-      body.style.overflow = "auto";
-    }
-  }, [modalOpen]);
-
-  const openModal = (index, description, title) => {
-    let imageSrc;
-    switch (index) {
-      case 0:
-        imageSrc = elearn;
-        break;
-      case 1:
-        imageSrc = multi;
-        break;
-      case 2:
-        imageSrc = av;
-        break;
-      case 3:
-        imageSrc = reading;
-        break;
-      default:
-        imageSrc = elearn;
-    }
-    setSelectedImage(imageSrc);
-    setSelectedDescription(description);
-    setSelectedTitle(title);
-    setModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setSelectedImage(null);
-    setSelectedDescription("");
-    setModalOpen(false);
+  const handleFeatureClick = (feature) => {
+    setSelectedFeature(feature);
   };
 
   return (
-    <div id="facilities" className=" h-full bg-base-200 w-full">
-      <div className=" h-full pb-32 px-4 md:px-20 lg:px-32 text-black">
+    <div id="facilities" className="h-full bg-base-200 w-full">
+      <div className="h-full pb-32 px-4 md:px-20 lg:px-32 text-black">
         <div>
           <h1 className="text-center pt-32 text-2xl md:text-5xl font-bold">
             Get innovative with our
@@ -89,16 +50,12 @@ const Facilities = () => {
             Choose a facility to view its details
           </p>
         </div>
-        <div className="grid gap-5 grid-cols-2 ">
+        <div className="grid gap-5 grid-cols-2">
           {featuresData.map((feature) => (
             <div
               key={feature.id}
-              className="relative overflow-hidden rounded-md cursor-pointer hover:shadow-lg transition duration-300"
-              onClick={() =>
-                openModal(feature.id - 1, feature.description, feature.title)
-              }
-              onMouseEnter={() => setActiveFeature(feature)}
-              onMouseLeave={() => setActiveFeature(null)}
+              className="relative overflow-hidden rounded-md cursor-pointer transition duration-300"
+              onClick={() => handleFeatureClick(feature)}
             >
               <img
                 className="object-cover w-full md:h-80 h-60"
@@ -114,44 +71,59 @@ const Facilities = () => {
                 alt=""
               />
 
-              {activeFeature && activeFeature.id === feature.id && (
-                <div className="absolute text-white inset-0 flex  items-center justify-center text-center bg-black bg-opacity-75">
-                  <div>
-                    <h2 className="text-lg font-bold">{feature.title}</h2>
-                    <p className="text-xs">
-                      {feature.description.split(" ").slice(0, 4).join(" ")}...
-                    </p>
-                  </div>
+              <div className="absolute inset-0 flex items-center justify-center text-center bg-black bg-opacity-30">
+                <div>
+                  <h2 className="text-base md:text-lg font-bold text-white">
+                    {feature.title}
+                  </h2>
+                  <button
+                    className="btn btn-xs btn-primary text-white"
+                    onClick={() => handleFeatureClick(feature)}
+                  >
+                    Click to know more
+                  </button>
                 </div>
-              )}
+              </div>
             </div>
           ))}
         </div>
       </div>
-      {modalOpen && (
+      {selectedFeature && (
         <div className="fixed z-10 inset-0 flex items-center justify-center bg-black bg-opacity-90">
-          <div className=" mx-auto">
+          <div className="mx-auto">
             <h1 className="font-bold text-center pb-4 pt-10 text-4xl md:text-6xl">
               <span className="text-primary">
-                {selectedTitle.split(" ")[0]}
+                {selectedFeature.title.split(" ")[0]}
               </span>{" "}
-              <span className="text-white">{selectedTitle.split(" ")[1]}</span>
+              <span className="text-white">
+                {selectedFeature.title.split(" ")[1]}
+              </span>
             </h1>
 
-            <img
-              src={selectedImage}
-              alt=""
-              className="w-full h-full px-3 md:px-0 rounded-lg md:rounded-none md:h-[550px] object-cover"
-            />
+            <div className="flex justify-center">
+              <img
+                src={
+                  selectedFeature.id === 1
+                    ? elearn
+                    : selectedFeature.id === 2
+                    ? multi
+                    : selectedFeature.id === 3
+                    ? av
+                    : reading
+                }
+                alt=""
+                className="w-full h-auto md:h-[550px] object-cover"
+              />
+            </div>
             <div className="md:flex px-10 pt-6">
               <p className="text-xs md:text-base text-justify md:w-2/3 text-white">
-                {selectedDescription}
+                {selectedFeature.description}
               </p>
             </div>
-            <div className="flex md:justify-end justify-center pt-3 md:pt-0 px-10">
+            <div className="flex justify-center pt-3 md:pt-0 px-10">
               <button
                 className="text-lg hover:bg-white hover:text-black ease-in-out duration-300 transition-all text-white px-3 py-1 rounded-sm bg-primary"
-                onClick={closeModal}
+                onClick={() => setSelectedFeature(null)}
               >
                 Close
               </button>

@@ -25,52 +25,15 @@ const Service = () => {
     },
   ];
 
-  const [activeFeature, setActiveFeature] = React.useState(null);
-  const [modalOpen, setModalOpen] = React.useState(false);
-  const [selectedImage, setSelectedImage] = React.useState(null);
-  const [selectedDescription, setSelectedDescription] = React.useState("");
-  const [selectedTitle, setSelectedTitle] = React.useState("");
+  const [selectedFeature, setSelectedFeature] = React.useState(null);
 
-  React.useEffect(() => {
-    const body = document.querySelector("body");
-    if (modalOpen) {
-      body.style.overflow = "hidden";
-    } else {
-      body.style.overflow = "auto";
-    }
-  }, [modalOpen]);
-
-  const openModal = (index, description, title) => {
-    let imageSrc;
-    switch (index) {
-      case 0:
-        imageSrc = box;
-        break;
-      case 1:
-        imageSrc = box2;
-        break;
-      case 2:
-        imageSrc = box3;
-        break;
-
-      default:
-        imageSrc = box;
-    }
-    setSelectedImage(imageSrc);
-    setSelectedDescription(description);
-    setSelectedTitle(title);
-    setModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setSelectedImage(null);
-    setSelectedDescription("");
-    setModalOpen(false);
+  const handleFeatureClick = (feature) => {
+    setSelectedFeature(feature);
   };
 
   return (
-    <div id="service" className=" h-full w-full">
-      <div className=" h-full px-4 pb-32 md:px-20 lg:px-32 text-black">
+    <div id="service" className="h-full w-full">
+      <div className="h-full px-4 pb-32 md:px-20 lg:px-32 text-black">
         <div>
           <h1 className="text-center pt-32 text-2xl md:text-5xl font-bold">
             Get <span className="text-primary">inspired</span> with our Services
@@ -80,16 +43,11 @@ const Service = () => {
             Choose a service to view its details
           </p>
         </div>
-        <div className="grid gap-5 grid-cols-1 md:grid-cols-3 ">
+        <div className="grid gap-5 grid-cols-1 md:grid-cols-3">
           {featuresData.map((feature) => (
             <div
               key={feature.id}
-              className="relative overflow-hidden rounded-md cursor-pointer hover:shadow-lg transition duration-300"
-              onClick={() =>
-                openModal(feature.id - 1, feature.description, feature.title)
-              }
-              onMouseEnter={() => setActiveFeature(feature)}
-              onMouseLeave={() => setActiveFeature(null)}
+              className="relative overflow-hidden rounded-md cursor-pointer transition duration-300"
             >
               <img
                 className="object-cover w-full md:h-80 h-60"
@@ -100,49 +58,62 @@ const Service = () => {
                     ? box2
                     : feature.id === 3
                     ? box3
-                    : feature.id === 4
+                    : box
                 }
                 alt=""
               />
 
-              {activeFeature && activeFeature.id === feature.id && (
-                <div className="absolute inset-0 text-white flex  items-center justify-center text-center bg-black bg-opacity-75">
-                  <div>
-                    <h2 className="text-lg font-bold">{feature.title}</h2>
-                    <p className="text-xs">
-                      {feature.description.split(" ").slice(0, 4).join(" ")}...
-                    </p>
-                  </div>
+              <div className="absolute inset-0 text-white flex items-center justify-center text-center bg-black bg-opacity-30">
+                <div>
+                  <h2 className="text-lg font-bold">{feature.title}</h2>
+                  <button
+                    className="text-xs bg-primary text-white px-2 py-1 rounded-md mt-2"
+                    onClick={() => handleFeatureClick(feature)}
+                  >
+                    More Info
+                  </button>
                 </div>
-              )}
+              </div>
             </div>
           ))}
         </div>
       </div>
-      {modalOpen && (
-        <div className="fixed inset-0 z-10 flex items-center justify-center bg-black bg-opacity-90">
-          <div className=" mx-auto">
+      {selectedFeature && (
+        <div className="fixed inset-0 z-40 flex items-center justify-center bg-black bg-opacity-90">
+          <div className="mx-auto">
             <h1 className="font-bold text-center pb-4 pt-10 text-4xl md:text-6xl">
               <span className="text-primary">
-                {selectedTitle.split(" ")[0]}
+                {selectedFeature.title.split(" ")[0]}
               </span>{" "}
-              <span className="text-white">{selectedTitle.split(" ")[1]}</span>
+              <span className="text-white">
+                {selectedFeature.title.split(" ")[1]}
+              </span>
             </h1>
 
-            <img
-              src={selectedImage}
-              alt=""
-              className="w-full h-full px-3 md:px-0 rounded-lg md:rounded-none md:h-[550px] object-cover"
-            />
+            <div className="flex justify-center">
+              <img
+                src={
+                  selectedFeature.id === 1
+                    ? box
+                    : selectedFeature.id === 2
+                    ? box2
+                    : selectedFeature.id === 3
+                    ? box3
+                    : box
+                }
+                alt=""
+                className="w-full h-auto md:h-[550px] object-cover"
+              />
+            </div>
             <div className="md:flex px-10 pt-6">
-              <p className="text-xs md:text-base text-justify md:w-2/3 text-white">
-                {selectedDescription}
+              <p className="text-xs md:text-base text-justify pb-2 text-white">
+                {selectedFeature.description}
               </p>
             </div>
-            <div className="flex md:justify-end justify-center pt-3 md:pt-0 px-10">
+            <div className="flex justify-center pt-3 md:pt-0 px-10">
               <button
-                className="text-lg hover:bg-white hover:text-black ease-in-out duration-300 transition-all text-white px-3 py-1 rounded-sm bg-primary"
-                onClick={closeModal}
+                className="btn btn-primary text-white "
+                onClick={() => setSelectedFeature(null)}
               >
                 Close
               </button>

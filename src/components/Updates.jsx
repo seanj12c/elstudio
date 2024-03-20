@@ -18,12 +18,17 @@ class Updates extends React.Component {
     };
     return (
       <div id="updates" className="h-full  w-full ">
-        <dialog id="updates1" className="modal">
+        <dialog id="updates1" className="modal w-full">
           <div className="modal-box">
             <h3 className="font-bold text-primary text-lg">
               eLStudio Inventory System
             </h3>
-            <p className="py-4">
+            <img
+              className="p-3 h-[450px] w-full object-cover"
+              src={two}
+              alt="Server"
+            />
+            <p className="py-4 text-justify">
               The ongoing management of technological resources, including
               computers, printers, TVs, cameras, and essential supplies like
               cables, papers, and tapes, requires a consistent inventory
@@ -34,16 +39,21 @@ class Updates extends React.Component {
               recorded in the system, indicating whether the item is still
               working, not working, or in need of improvement.
             </p>
+            <form method="dialog" className="modal-action ">
+              <button className="btn-error btn text-white">Close</button>
+            </form>
           </div>
-          <form method="dialog" className="modal-backdrop">
-            <button>close</button>
-          </form>
         </dialog>
         <dialog id="updates2" className="modal">
           <div className="modal-box">
             <h3 className="font-bold text-primary text-lg">
               Pan Cafe Pro Server
             </h3>
+            <img
+              className="p-3 h-[450px] w-full object-cover"
+              src={one}
+              alt="Server"
+            />
             <p className="py-4 text-justify">
               This setup, known as the server-client relationship, enables the
               computers (referred to as the client) to be directly managed by a
@@ -55,10 +65,10 @@ class Updates extends React.Component {
               operation of our e-learning hub. With this structure, the
               administrator gains enhanced control over the entire network.
             </p>
+            <form method="dialog" className="modal-action ">
+              <button className="btn-error btn text-white">Close</button>
+            </form>
           </div>
-          <form method="dialog" className="modal-backdrop">
-            <button>close</button>
-          </form>
         </dialog>
         <div className="h-full flex items-center py-36 lg:px-20 text-black w-full">
           <div className="hidden md:flex md:items-center w-full">
@@ -74,7 +84,7 @@ class Updates extends React.Component {
                 eLStudio and check it out for yourself!
               </p>
             </div>
-            <div className="w-full mx-auto max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg px-1 object-contain  h-full shadow-primary">
+            <div className="w-full mx-auto max-w-screen-sm  xl:max-w-screen-lg px-1 object-contain  h-full shadow-primary">
               <Slider {...settings}>
                 <div className="card card-compact w-96 bg-base-300 ">
                   <figure>
@@ -150,6 +160,7 @@ class Updates extends React.Component {
                   </figure>
                   <div className="card-body">
                     <h2 className="card-title">Networked Computers</h2>
+
                     <p>
                       The computers within the learning hub are now
                       interconnected through a centralized server. To facilitate

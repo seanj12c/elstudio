@@ -50,7 +50,7 @@ const Footer = () => {
         </nav>
         <nav>
           <h6 className="footer-title">Other Links</h6>
-          <a rel="noreferrer" target="_blank" href="http://www.codepp.net">
+          <a rel="noreferrer" target="_blank" href="/">
             <li className="my-1 hover:text-primary duration-500">CODEPP</li>
           </a>
 
