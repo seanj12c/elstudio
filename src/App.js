@@ -8,6 +8,7 @@ import { Navbar } from "./components/Navbar";
 import Footer from "../src/components/Footer";
 import Video from "./components/Video";
 import Partnership from "./components/Partnership";
+import Footermodal from "./components/Footermodal";
 
 function App() {
   return (
@@ -19,9 +20,9 @@ function App() {
       <Facilities />
       <Service />
       <Partnership />
-
       <Contacts />
       <Footer />
+      <Footermodal />
     </div>
   );
 }
