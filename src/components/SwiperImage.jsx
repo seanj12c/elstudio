@@ -46,7 +46,9 @@ function SwiperImage() {
                 alt={img}
               />
             </div>
-            <p className="text-center  w-full">{texts[idx]}</p>{" "}
+            <p className="text-center text-primary font-bold w-full">
+              {texts[idx]}
+            </p>{" "}
           </div>
         ))}
       </Slider>
