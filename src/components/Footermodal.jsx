@@ -8,7 +8,7 @@ function Footermodal() {
   };
 
   return (
-    <div className="py-2">
+    <div className="">
       {modalOpen && (
         <div className="fixed bottom-[-20px] left-0 w-full bg-black bg-opacity-50 h-20 p-5 text-white">
           <button
