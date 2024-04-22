@@ -102,12 +102,12 @@ const Contacts = () => {
               </a>
               <a
                 className="flex items-center gap-2 py-1 hover:text-primary duration-500 hover:translate-x-2"
-                href="tel:0909090909"
+                href="tel:09193149161"
                 target="_blank"
                 rel="noreferrer"
               >
                 <CiPhone size={20} />
-                +(639) 090 912 345
+                +(639) 19 3149 161
               </a>
 
               <a
