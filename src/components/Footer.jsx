@@ -3,13 +3,14 @@ import ched from "../assets/ched.png";
 import cvsu from "../assets/cvsu.png";
 import logo from "../assets/logo.png";
 import upou from "../assets/upou.png";
+import csc from "../assets/csc.png";
 
 import VisitCounter from "./VisitCounter";
 
 const Footer = () => {
   return (
     <div id="footer">
-      <footer className="footer p-10 bg-base-200 text-base-content">
+      <footer className="footer p-10 pb-20 bg-base-200 text-base-content">
         <aside>
           <p>
             <img className="h-24 lg:h-28 object-contain" src={logo} alt="" />
@@ -71,10 +72,27 @@ const Footer = () => {
         </nav>
         <nav className="flex justify-center flex-col w-full mx-auto items-center">
           <div className=" border-white justify-center md:justify-start grid-cols-4 md:grid-cols-2  grid gap-2 pl-2">
-            <img className="h-16  object-contain" src={ched} alt="" />
-            <img className="h-16 object-contain" src={cvsu} alt="" />{" "}
-            <img className="h-16 object-contain" src={upou} alt="" />
-            <img className="h-16 object-contain" src={ched} alt="" />
+            <a rel="noreferrer" target="_blank" href="https://ched.gov.ph">
+              <img className="h-16  object-contain" src={ched} alt="" />
+            </a>
+
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://cvsu-rosario.edu.ph"
+            >
+              <img className="h-16 object-contain" src={cvsu} alt="" />{" "}
+            </a>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://www.upou.edu.ph/home/"
+            >
+              <img className="h-16 object-contain" src={upou} alt="" />
+            </a>
+            <a rel="noreferrer" target="_blank" href="https://www.csc.gov.ph">
+              <img className="h-16 object-contain" src={csc} alt="" />
+            </a>
           </div>
           <div className="hover:translate-y-1 ease-in-out transition-all duration-300">
             <VisitCounter />
