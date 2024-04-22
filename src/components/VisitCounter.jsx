@@ -43,10 +43,29 @@ const VisitCounter = () => {
 
   return (
     <div>
-      <h1 className="text-xl font-bold glass rounded-md px-2 py-1 text-center">
-        Visitor Count
-        <NumberCounter value={totalVisits} />
-      </h1>
+      <div className="stat shadow">
+        <div className="stat-figure text-secondary">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            className="inline-block w-6 h-6 stroke-current"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M13 10V3L4 14h7v7l9-11h-7z"
+            ></path>
+          </svg>
+        </div>
+        <div className="stat-title">Page Views</div>
+        <div className="stat-value text-lg text-secondary">
+          {" "}
+          <NumberCounter value={totalVisits} />
+        </div>
+        <div className="stat-desc">21% more than last month</div>
+      </div>
     </div>
   );
 };
