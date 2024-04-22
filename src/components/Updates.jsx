@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import one from "../assets/updates/1.png";
 import two from "../assets/updates/2.png";
+import three from "../assets/updates/3.png";
 
 class Updates extends React.Component {
   render() {
@@ -26,6 +27,32 @@ class Updates extends React.Component {
             <img
               className="p-3 h-[450px] w-full object-cover"
               src={two}
+              alt="Server"
+            />
+            <p className="py-4 text-justify">
+              The ongoing management of technological resources, including
+              computers, printers, TVs, cameras, and essential supplies like
+              cables, papers, and tapes, requires a consistent inventory
+              process. With the newly implemented inventory system, keeping
+              track of eL Studio assets is now significantly more efficient
+              compared to the manual inventory approach. The staff only needs to
+              scan the QR code of a specific item, and it will be automatically
+              recorded in the system, indicating whether the item is still
+              working, not working, or in need of improvement.
+            </p>
+            <form method="dialog" className="modal-action ">
+              <button className="btn-error btn text-white">Close</button>
+            </form>
+          </div>
+        </dialog>
+        <dialog id="updates3" className="modal w-full">
+          <div className="modal-box">
+            <h3 className="font-bold text-primary text-lg">
+              eLStudio Inventory System
+            </h3>
+            <img
+              className="p-3 h-[450px] w-full object-cover"
+              src={three}
               alt="Server"
             />
             <p className="py-4 text-justify">
@@ -142,6 +169,34 @@ class Updates extends React.Component {
                     </div>
                   </div>
                 </div>
+                <div className="card card-compact w-96 bg-base-300">
+                  <figure>
+                    <img
+                      className="p-3 h-[450px] w-full object-cover"
+                      src={three}
+                      alt="ID"
+                    />
+                  </figure>
+                  <div className="card-body">
+                    <h2 className="card-title">eLStudio ID System</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Architecto molestias optio deserunt provident maxime
+                      consequatur asperiores odio officiis quas quo quae ab
+                      laudantium non, natus quis blanditiis omnis nemo sequi?
+                    </p>
+                    <div className="card-actions justify-end">
+                      <button
+                        className="btn"
+                        onClick={() =>
+                          document.getElementById("updates3").showModal()
+                        }
+                      >
+                        See more
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </Slider>
             </div>
           </div>
@@ -196,6 +251,30 @@ class Updates extends React.Component {
                         className="btn"
                         onClick={() =>
                           document.getElementById("updates1").showModal()
+                        }
+                      >
+                        See more
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div className="card card-compact w-96 bg-base-300 shadow-xl">
+                  <figure>
+                    <img className="p-3" src={three} alt="ID" />
+                  </figure>
+                  <div className="card-body">
+                    <h2 className="card-title">eLStudio ID System</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Architecto molestias optio deserunt provident maxime
+                      consequatur asperiores odio officiis quas quo quae ab
+                      laudantium non, natus quis blanditiis omnis nemo sequi?
+                    </p>
+                    <div className="card-actions justify-end">
+                      <button
+                        className="btn"
+                        onClick={() =>
+                          document.getElementById("updates3").showModal()
                         }
                       >
                         See more
